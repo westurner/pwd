@@ -3,6 +3,10 @@
 History
 -------
 
+0.2.1 (2015-05-04)
+--------------------
+* SEC: set CNB.innerHTML="" in reset.onclick
+
 0.2.0 (2015-05-04)
 ---------------------
 * ENH: Actions (IFrame, Print, Reset) (closes #2, #5)
