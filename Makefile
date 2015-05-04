@@ -70,7 +70,9 @@ install: clean
 	python setup.py install
 
 install_dev: install
+	pip install -r ./requirements.txt
 	pip install ghp-import
+	pip install pgs
 
 gh-pages:
 	git status
@@ -79,3 +81,8 @@ gh-pages:
 		-r origin \
 		-p ./pwd/html
 
+serve-gh-pages:
+	pgs -g . -r gh-pages
+
+serve-disk:
+	pgs -p ./pwd/html/
