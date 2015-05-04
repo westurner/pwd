@@ -1,38 +1,25 @@
-<!-- saved from url=(0017)http://wrd.nu/ps/ -->
+<!DOCTYPE html>
 <html>
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-  <title>
-   ...
-  </title>
+  <title>pwd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <style type="text/css">
    body {
-    /* font-family:Arial; */
-    font-family:sans-serif, sans;
-   }
-   li {
-    font-size:10pt;
-    margin-top:5px;
+    font-family:sans-serif;
    }
    p {
     margin-top:5px;
     margin-bottom:5px;
    }
-   h1 {
-    font-size:25pt;
-    margin:0;
-   }
-   h2 {
-    font-size:15pt;
-   }
    #chart {
-    font-family:Courier;
-    border:3px black;
-    font-size:10pt;
+    background-color:#eeeeee;
     border-color:#c0c0c0;
     border-style:solid;
     border-width:1px;
-    background-color:#eeeeee;
+    border:3px black;
+    font-family:monospace;
+    font-size:10pt;
    }
    #chartResults {
     margin: 12px 0;
@@ -41,20 +28,23 @@
     display:inline-block;
    }
    #chartLabel {
-
    }
    #CNB {
+    font-weight: bold;
     margin: 8px 0;
     text-align: center;
    }
    #resultTable {
-    font-family:Courier;
+    font-family:monospace;
     font-size:12pt;
    }
 
    textarea {
-    border: 1px solid #c0c0c0;
+    border: 0;
     background: #f0f0f0;
+    font-family:monospace;
+    font-size: 1.2em;
+    padding: 4px;
    }
 
    @media screen {
@@ -71,10 +61,10 @@
   <div id="document">
    <form action="" method="post" onsubmit="return false;">
     <p>
-     <textarea name="seed" onkeyup="return seedKeypressed();" rows=3 cols=45></textarea>
+     <textarea name="seed" onkeyup="return seedKeypressed();" rows=2 cols=45></textarea>
     </p>
     <p>
-     <textarea name="pwd" onkeyup="return pwdKeypressed();" rows=3 cols=45></textarea>
+     <textarea name="pwd" onkeyup="return pwdKeypressed();" rows=2 cols=45></textarea>
     </p>
     <p>
      <input checked="" name="numbers" onclick="makeChart();" type="checkbox"/>
