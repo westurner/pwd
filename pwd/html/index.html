@@ -13,36 +13,8 @@
   </script>
  </head>
  <body bgcolor="#FFFFFF" onload="makeChart(); document.forms[0].seed.focus()">
-  <form action="" method="post" onsubmit="return false;">
-   <table height="100%" width="100%">
-    <tbody>
-     <tr>
-      <td align="center" valign="center">
-       <table border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-         <tr>
-          <td width="20">
-          </td>
-          <td valign="bottom">
-           <h1>
-            ...
-           </h1>
-          </td>
-          <td width="20">
-          </td>
-          <td align="right">
-          </td>
-         </tr>
-         <tr>
-          <td width="20">
-          </td>
-          <td colspan="3">
-          </td>
-         </tr>
-         <tr>
-          <td width="20">
-          </td>
-          <td valign="top">
+  <div id="document">
+   <form action="" method="post" onsubmit="return false;">
            <p>
             <input name="seed" onkeyup="return seedKeypressed();" size="45" type="text"/>
            </p>
@@ -55,130 +27,16 @@
             <input name="punct" onclick="makeChart();" type="checkbox"/>
             ?
            </p>
-           <p>
-           </p>
            <div id="chartResults">
             <font color="#FF0000">
              ....[ ]....
             </font>
            </div>
-           <p>
-           </p>
-          </td>
-          <td width="20">
-          </td>
-          <td align="center" valign="top" width="300">
-           <div id="chart">
-            <table cellpadding="3" cellspacing="3">
-             <tbody>
-              <tr>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-              </tr>
-              <tr>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-              </tr>
-              <tr>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-              </tr>
-              <tr>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-              </tr>
-              <tr>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-              </tr>
-              <tr>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-              </tr>
-              <tr>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-              </tr>
-              <tr>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-              </tr>
-              <tr>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-               <td width="75">
-               </td>
-              </tr>
-             </tbody>
-            </table>
-           </div>
-           <p>
-           </p>
+           <div id="chart"></div>
            <div id="CNB">
             # 1685895334
            </div>
-           <p>
-           </p>
-          </td>
-         </tr>
-        </tbody>
-       </table>
-      </td>
-     </tr>
-    </tbody>
-   </table>
-  </form>
+   </form>
+  </div>
  </body>
 </html>
