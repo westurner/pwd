@@ -68,3 +68,14 @@ dist: clean
 
 install: clean
 	python setup.py install
+
+install_dev: install
+	pip install ghp-import
+
+gh-pages:
+	git status
+	ghp-import -n -b gh-pages \
+		-m "RLS: gh-pages: '$(shell git describe --all)' '$(shell git rev-parse HEAD)'" \
+		-r origin \
+		-p ./pwd/html
+
