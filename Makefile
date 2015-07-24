@@ -81,10 +81,34 @@ gh-pages:
 		-r origin \
 		-p ./pwd/html
 
+PWD_PORT=11888
+PWD_HOST=localhost
+PWDSERVEURL=http://${PWD_HOST}:${PWD_PORT}
+
+PWDWEBURL=https://westurner.org/pwd/
+
 serve-gh-pages:
-	pgs -g "${PWD}" -r gh-pages -P 12888
+	pgs -g "${PWD}" -r gh-pages -P ${PWD_PORT}
 
 serve-disk:
-	pgs -p ./pwd/html -P 12888
+	pgs -p ./pwd/html -P ${PWD_PORT}
 
 serve: serve-gh-pages
+
+open-local:
+	websh.py ./pwd/html/index.html
+
+openl: open-local
+
+open-served:
+	websh.py "${PWDSERVEURL}"
+
+opens: open-served
+
+open-web:
+	websh.py "${PWDWEBURL}"
+
+openw:
+	openw
+
+open: openl
