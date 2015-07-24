@@ -82,7 +82,9 @@ gh-pages:
 		-p ./pwd/html
 
 serve-gh-pages:
-	pgs -g . -r gh-pages
+	pgs -g "${PWD}" -r gh-pages -P 12888
 
 serve-disk:
-	pgs -p ./pwd/html/
+	pgs -p ./pwd/html -P 12888
+
+serve: serve-gh-pages
