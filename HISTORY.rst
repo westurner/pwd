@@ -3,6 +3,13 @@
 History
 -------
 
+0.2.2 (2015-05-05)
+--------------------
+* UBY: pwd/index.html: textarea:focus background [f6fbcdb]
+* UBY: pwd/index.html: textarea color [..] [0aeb504]
+* BLD: Makefile: open-local, open-served, open-web [4c1ad41]
+* BLD: Makefile: serve-gh-pages (serve), serve-disk [3e1d9fb]
+
 0.2.1 (2015-05-04)
 --------------------
 * SEC: set CNB.innerHTML="" in reset.onclick
