@@ -9,13 +9,18 @@ pwd
 ..        :target: https://pypi.python.org/pypi/pwd
 
 
-pwd
-
-* Free software: BSD license
+pwd: a parametrized one-file HTML+JS password generator that generates a
+printable S-Box
 
 Features
 --------
 
+* One HTML file that works offline
 * Generate a printable key box from a phrase
-* Generete a string from the keybox and another string
+* Generate a string from the seeded keybox and another string
   (alphabetic, alphanumeric, alphanumeric w/ punctuation)
+* Mobile app: https://github.com/westurner/pwd-ionic
+
+License
+--------
+* Free software: BSD license
