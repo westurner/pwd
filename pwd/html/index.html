@@ -134,7 +134,7 @@
     }
    }
 
-   dl.shortcuts {
+   dl.shortcuts, dl.specials {
      display: grid;
      grid-template-columns: max-content auto;
      grid-gap: 4px;
@@ -144,9 +144,14 @@
      font-weight: bold;
      width: 6em;
    }
-   dl.shortcuts dd {
+   dl.shortcuts dd, dl.specials dd {
      grid-column-start: 2;
      margin-inline-start: 0;
+   }
+
+   dl.specials dt {
+     grid-column-start: 1;
+     width: 7em;
    }
   </style>
   <script type="text/javascript">
@@ -429,7 +434,7 @@
     </dl>
 
     <h2>Specials</h2>
-    <dl class="shortcuts">
+    <dl class="specials">
       <dt>seed||pwd</dt><dd>seed, pwd, no numbers, no punctuation</dd>
       <dt>seed||pwd||#</dt><dd>seed, pwd, numbers, no punctuation</dd>
       <dt>seed||pwd||!#</dt><dd>seed, pwd, numbers, punctuation</dd>
