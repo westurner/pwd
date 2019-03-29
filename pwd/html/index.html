@@ -235,8 +235,6 @@
     var inCtrlShiftV = false;
     function onKeyDown(_e) {
       var e = _e; // window.event ? event : _e;
-      console.log(e);
-      console.log(e.keyCode);
       if (e.ctrlKey && e.keyCode === 88) { // Ctrl+X
         copyToClipboard("Ctrl+X");
       } else if (e.ctrlKey && e.keyCode === 67) { // Ctrl+C
@@ -304,7 +302,6 @@
         document.getElementById("punct").checked = punct;
         makeChart();
       }
-      // console.log(seed, pwd, numbers, punct);
       if (seed !== false) {
         document.getElementById("seed").value = unescapeDoublePipe(seed);
         seedKeypressed();
@@ -313,7 +310,6 @@
         document.getElementById("pwd").value = unescapeDoublePipe(pwd);
         pwdKeypressed();
       }
-      console.log('specialPaste', [seed, pwd, numbers, punct]);
       return undefined;
     }
 
@@ -324,14 +320,12 @@
 
     document.addEventListener("paste", function(e) {
       var paste = (event.clipboardData || window.clipboardData).getData('text');
-      console.log('paste', paste);
       var target = e.target;
       var pasteTarget;
       var specialPaste;
       if (inCtrlShiftV) {
         inCtrlShiftV = false;
         specialPaste = handleSpecialPaste(paste);
-        console.log('specialpaste', specialPaste);
         if (specialPaste === undefined) {
           e.preventDefault();
           return;
