@@ -24,7 +24,7 @@ test_requirements = [
 
 setup(
     name='pwd',
-    version='0.3.0',
+    version='0.3.1',
     description="pwd",
     long_description=readme + '\n\n' + history,
     author="Wes Turner",
